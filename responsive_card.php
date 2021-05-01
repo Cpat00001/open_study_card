@@ -3,24 +3,35 @@
     $email = $user['email'];
     $no_data = "not submited";
     $tel = isset($user['telephone']) ? $user['telephone'] : $no_data;
-    echo "<h1>" . $tel . "</h1><br>";
+    // echo "<h1>" . $tel . "</h1><br>";
 ?>
 
 <div class="card">
     <div class="card_header">
-        <h3><?php echo $name ?></h3>
+        <div class="student_basic_data">
+            <div class="avatar">
+                <img src="./img/man_student.jpg" alt="student_img" id="student_img">
+            </div>
+            <h3><?php echo $name ?></h3>
+            <div class="is_student">
+                <h5>STUDENT</h5>
+            </div>
+                <div class="student_id">
+                    <h5 id="id_number">ID: 1234567</h5>
+                </div>
+        </div>
     </div>
 
     <div class="card_body">
          <!-- div with cources info -->
             <div class="courses_info">
-                    <div id="ci_elem">
-                        <h5>Complete</h5>
-                        <h6>Enrolment status</h6>
+                    <div id="ci_elem_left">                       
+                        <h5 id="responsive_txt">Complete</h5>
+                        <h6 id="responsive_txt">Enrolment status</h6>
                     </div>
                     <div id="ci_elem">
-                        <h5> 11 </h5>
-                        <h6>Completed courses</h6>
+                        <h5 id="responsive_txt"> 11 </h5>
+                        <h6 id="responsive_txt">Completed courses</h6>
                     </div>
             </div> 
 

@@ -24,7 +24,7 @@
         curl_close($ch);
         $json_data_decode = json_decode($json_data, TRUE);
 
-        var_dump($json_data_decode);
+        //var_dump($json_data_decode);
         //print_r($json_data_decode);
         ?>
 
