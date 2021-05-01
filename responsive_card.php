@@ -25,7 +25,7 @@
     <div class="card_body">
          <!-- div with cources info -->
             <div class="courses_info">
-                    <div id="ci_elem_left">                       
+                    <div id="ci_elem">                       
                         <h5 id="responsive_txt">Complete</h5>
                         <h6 id="responsive_txt">Enrolment status</h6>
                     </div>
@@ -40,15 +40,44 @@
             <h5>CONTACT DETAILS:</h5>
             <?php 
             if(isset($email)){
-                echo "Email: " . $email;
+                echo "Email: " . $email ;
             }else{
                 echo "Email: " . $no_data;
             }
             ?>
             <h5>Tel: <?php echo $tel; ?></h5>
-            <h5>About me:</h5>
+            <h5>ABOUT ME:</h5>
             <p>short student's descriptions - hardcoded.
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="more_info">
+            <div class="current_courses">
+                <div id="course_icon"></div>
+                <div>
+                    <h5>Current Course:</h5>
+                    <p id="responsive_txt">A-LEVEL BIOLOGY</p>
+                </div>
+                <div id="open_more">
+                    <p>>></p>
+                </div>
+            </div>
+            <div class="my_photos">
+                <div>
+                    <h5>My Photos</h5>
+                </div>
+                <div>
+                    <p id="more_imgs">>></p>
+                </div>
+                <div hidden id="img_gallery">
+                    <div class="gallery">
+                        <div class="first_img"></div>
+                        <div class="second_img"></div>
+                        <div class="third-img"></div>
+                        <div class="fourth-img"></div>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
         
     </div>

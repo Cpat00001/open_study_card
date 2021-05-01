@@ -46,6 +46,8 @@
             }
             ?>
         </div>
+        <!-- add javascript files -->
+        <script src="./js_files/custom_javascript.js"></script>
 </body>
 </html>
 
