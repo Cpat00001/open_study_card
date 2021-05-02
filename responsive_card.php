@@ -33,20 +33,20 @@
             <div class="courses_info">
                     <div id="ci_elem">                       
                         <h5 id="responsive_txt">Complete</h5>
-                        <h6 id="responsive_txt">Enrolment status</h6>
+                        <h6 id="responsive_txt_darker">Enrolment status</h6>
                     </div>
                     <div id="ci_elem">
                         <h5 id="responsive_txt"> 3 </h5>
-                        <h6 id="responsive_txt">Completed courses</h6>
+                        <h6 id="responsive_txt_darker">Completed courses</h6>
                     </div>
             </div> 
 
         <!-- student details -->
         <div class="student_details">
-            <h5>CONTACT DETAILS:</h5>
+            <h5 id="responsive_txt_darker">CONTACT DETAILS:</h5>
             <?php echo "<h5>Email: " . $email . "</h5>"; ?>
             <h5>Tel: <?php echo $tel; ?></h5>
-            <h5>ABOUT ME:</h5>
+            <h5 id="responsive_txt_darker">ABOUT ME:</h5>
             <p>short student's descriptions - hardcoded.
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>

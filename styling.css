@@ -118,13 +118,18 @@ body {
 }
 #responsive_txt {
   height: 0.5em;
+  color: rgb(243, 243, 239);
+}
+#responsive_txt_darker {
+  color: rgb(163, 163, 159);
 }
 #responsive_txt_course {
   font-size: 12px;
   text-transform: uppercase;
+  color: rgb(163, 163, 159);
 }
 .student_details {
-  margin-top: 2rem;
+  margin-top: 3.5rem;
 }
 /* current course && photos */
 .more_info {
@@ -249,7 +254,7 @@ body {
     box-shadow: 3px 10px 5px rgb(46 52 45);
   }
   .student_details {
-    margin-top: 120px;
+    margin-top: 150px;
   }
   .current_courses {
     background: rgb(77, 75, 75);
@@ -266,3 +271,4 @@ body {
     display: grid;
   }
 }
+/* end of file */
