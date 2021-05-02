@@ -1,5 +1,6 @@
 body {
   background-color: whitesmoke;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 .card {
   position: relative;
@@ -15,21 +16,27 @@ body {
   border-radius: 10% 10% 0% 0%;
   min-height: 200px;
   height: auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .card_header {
-  /* background-color: rgb(248, 101, 204); */
-  background: linear-gradient(137deg, rgb(218, 28, 28), rgb(218, 37, 187));
+  /* background: linear-gradient(137deg, rgb(218, 37, 187), rgb(218, 28, 28)); */
+  background: linear-gradient(
+    137deg,
+    rgb(218, 37, 187),
+    rgb(218, 28, 28) 60%,
+    rgb(194, 25, 25) 80%
+  );
+
   padding: 20px;
   padding-bottom: 4em;
-  /* display: block;
-  margin-left: auto;
-  margin-right: auto; */
   width: 95%;
   min-height: 200px;
   border-radius: 10% 10% 0% 0%;
   box-shadow: 10px 50px 20px rgb(206, 204, 204);
   color: rgb(228, 223, 223);
+}
+.fa-check {
+  margin-top: 15%;
 }
 #close_card {
   float: right;
@@ -40,11 +47,28 @@ body {
   text-align: center;
   margin-top: 1rem;
 }
+.avatar {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 #student_img {
   width: 70px;
   height: 70px;
   border-radius: 30%;
-  background-color: orange;
+  grid-column: 2;
+}
+#small_circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  color: red;
+  position: absolute;
+  top: 20%;
+  right: 80%;
+  z-index: 1;
+  grid-column: 3;
 }
 .student_id {
   border: 1px solid rgb(228, 223, 223);
@@ -55,7 +79,6 @@ body {
 #id_number {
   margin: 10%;
 }
-
 .card_body {
   background-color: rgb(46, 42, 45);
   padding: 20px;
@@ -95,6 +118,10 @@ body {
 }
 #responsive_txt {
   height: 0.5em;
+}
+#responsive_txt_course {
+  font-size: 12px;
+  text-transform: uppercase;
 }
 .student_details {
   margin-top: 2rem;

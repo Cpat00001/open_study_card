@@ -43,7 +43,7 @@
                 // var_dump($key);
 
                 if($key == $chosen_user){
-                    // echo "znalalzem usera <br>";
+                    // echo "user found <br>";
                     // echo $key . " => " . $user['name'];
                     include 'responsive_card.php';
                 }
