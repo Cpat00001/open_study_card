@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styling.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./img/font-awesome-4.7.0/css/font-awesome.min.css">
+
     <title>Student's card</title>
 </head>
 <body>
@@ -24,7 +28,7 @@
         curl_close($ch);
         $json_data_decode = json_decode($json_data, TRUE);
 
-        //var_dump($json_data_decode);
+        // var_dump($json_data_decode);
         //print_r($json_data_decode);
         ?>
 
